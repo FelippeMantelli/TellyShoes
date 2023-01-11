@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&family=Roboto:wght@100&family=Rubik+Puddles&display=swap');
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body{
+    background-color: transparent;
+}
+
+label{
+    background-color: white;
+}
+
+li,a,button,p,h1,h2,h4,h5 {
+    font-family: "Overpass";
+    background: transparent;
+}
+
+header{
+    max-width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: rgb(16, 16, 16);
+}
+
+.logo {
+    display: flex;
+    height: 100px;
+}
+
+.navLinks{
+    background-color: rgb(16, 16, 16);
+    list-style: none;
+}
+
+.navLinks a{
+    color:white;
+    list-style: none;
+}
+
+.navLinks li{
+    background-color: transparent;
+    display: inline-block;
+    padding: 0px 105px;
+}
+
+.navLinks li,a,button{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.navLinks li a:hover{
+    color:aquamarine;
+}
+
+.search{
+    float: right;
+    padding: 6px;
+    border: none;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    cursor: auto;
+    font-family: "Overpass";
+}
+
+.contactButton{
+    color: black;
+    padding: 5px 15px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.contactButton:hover{
+    background-color: aquamarine;
+}
+
+.sponsorConteiner{
+    width: 100%;
+    max-height: 300px;
+    background-image: url("https://media4.giphy.com/media/SwmPjBifTij0S5kXMS/giphy.gif?cid=ecf05e47bbjmialwttz99b0ig1af5qmz2kplnj9d5lytqtg9&rid=giphy.gif&ct=s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.bestSellersTitle{
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: transparent;
+}
+
+.productConteinerBestSeller{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    box-shadow: 2px 2px 15px black; 
+    background-size: cover;
+    background-position: center;
+}
+
+.brands{
+    display: flex;
+    padding-top: 25px;
+    padding-inline:35px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 2px 2px 15px black; 
+}
+
+.logoBrands img{
+    max-width: 250px;
+}
+
+.productConteiner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.productCard {
+    width: 15%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25),0px 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: white;
+}
+
+.productCard:hover{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23) ;
+    transform: translate(0px, -8px);
+}
+
+.productCardImg{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.buyCardButton{
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.buyCardButton:hover{
+    background-color: aquamarine;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23) ;
+}
+
+.footerDecoration{
+    background-color: black;
+    padding: 50px;
+    border-top: 2px solid black;
+    box-shadow: 0px -10px 25px rgba(0, 0, 0, 0.23)
+}
+
+.footerText{
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    color:aquamarine
+}
+
+/*Conigurações de responsividade segundo a ordem que os items aparecem na tela*/
+
+@media(max-width:1000px){
+    .header{
+        width: 200px;
+    }
+}
+
+@media(max-width:1000px){
+    nav{
+        width: 200px;
+    }
+}
+
+@media(max-width:1000px){
+    .logo{
+        width: 200px;
+    }
+}
+
+@media(max-width:1000px){
+    form{
+        width: 200px;
+    }
+    .search input[type=text]{
+        width: 100%;
+    }
+}
+
+@media(max-width:1300px){
+    .productCard{
+        width: 200px;
+    }
+ }
+
+ @media(max-width:750px){
+    .productCard{
+        width: 100%;
+    }
+}

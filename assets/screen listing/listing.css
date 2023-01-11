@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&family=Roboto:wght@100&family=Rubik+Puddles&display=swap');
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+html{
+    background-color: transparent;
+}
+
+li,a,th,td,h1.h2,h4,h5 {
+    font-family: "Overpass";
+    background: transparent;
+}
+
+header{
+    max-width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(16, 16, 16);
+}
+
+.logo {
+    display: flex;
+    height: 100px;
+}
+
+.navLinks{
+    background-color: rgb(16, 16, 16);
+    list-style: none;
+}
+
+.navLinks a{
+    color:white;
+    list-style: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 105px;
+}
+
+.navLinks li,a,button{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.navLinks li a:hover{
+    color: aquamarine;
+}
+
+main{
+    margin: 50px;
+    background-color: transparent;
+}
+
+.search{
+    float:right;
+    border: solid 1px;
+    color: black;
+    border-radius: 200px;
+    cursor: auto;
+    font-family: "Overpass";
+}
+
+.searchPosition{
+    max-width: 800px;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    background-color: transparent;
+}
+
+/* EM CASO DE USO DE IMAGEM/GIF PARA O BACKGROUND*/
+
+.backgroundDecoration{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentTable{
+    border-collapse: collapse;
+    margin: 15px 0;
+    min-width: 800px;
+    box-shadow: 10px 10px 10px;
+}
+
+.contentTable thead,th{
+    background-color: rgba(253, 255, 127, 0.87);
+    text-align: center;
+}
+
+.contentTable tr{
+    background-color: rgb(238, 238, 238);
+    text-align: left;
+    border:solid 1px;
+}
+
+.tablePosition{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.footerDecoration{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    padding: 20px;
+    border-top: 2px solid black;
+    box-shadow: 0px -10px 25px rgba(0, 0, 0, 0.23)
+}
+
+.footerText{
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    color:aquamarine
+}
+
+/*Conigurações de responsividade segundo a ordem que os items aparecem na tela*/
+
+@media(max-width:1000px){
+    .header{
+        width: 200px;
+    }
+    nav{
+        width: 200px;
+    }
+    .logo{
+        width: 200px;
+    }
+}
+
+
+
+
